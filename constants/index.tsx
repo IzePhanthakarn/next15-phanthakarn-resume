@@ -3,9 +3,8 @@ import { LineMdFacebook } from "@/components/icon/LineMdFacebook";
 import { LineMdGithubLoop } from "@/components/icon/LineMdGithubLoop";
 import { LineMdInstagram } from "@/components/icon/LineMdInstagram";
 import { LineMdPhoneCallLoop } from "@/components/icon/LineMdPhoneCallLoop";
-import { calculateDuration } from "@/lib/date";
 
-export const mainWebsite = "https://izephanthakarn.netlify.app/"
+export const mainWebsite = "https://izephanthakarn.netlify.app/";
 
 // SOCAIL MEDIA
 export const socials: Social[] = [
@@ -63,28 +62,25 @@ export const skills = {
 export const projects: Project[] = [
   {
     title: "Phanthakarn Resume",
-    description: "A Resume website built with NextJS TailwindCSS and Shadcn UI",
+    description: "descProject1",
     tech: "TypeScript",
     link: "https://github.com/IzePhanthakarn/next15-phanthakarn-resume",
   },
   {
-    title: "Elysia Portfolio",
-    description:
-      "An API for a portfolio website built with Elysia by TypeScript",
+    title: "Elysia API for Portfolio",
+    description: "descProject2",
     tech: "TypeScript",
     link: "https://github.com/IzePhanthakarn/elysia-portfolio",
   },
   {
     title: "Portfilio Website",
-    description:
-      "A personal portfolio website built with Nuxt.js and Tailwind CSS",
+    description: "descProject3",
     tech: "NuxtJS",
     link: "https://github.com/IzePhanthakarn/nuxt3-portfolio",
   },
   {
     title: "Discord ChatGPT Bot",
-    description:
-      "A Discord bot that uses OpenAI's ChatGPT to generate responses",
+    description: "descProject4",
     tech: "JavaScript",
     link: "https://github.com/IzePhanthakarn/discord-chatgpt-bot",
   },
@@ -98,21 +94,19 @@ export const techColors = {
 
 export const jobs = [
   {
-    role: "Full-Stack Developer",
+    role: "role1",
     company: "Soilfish Co., Ltd.",
     logo: "/company/Soilfish.png",
-    duration: `2023 - Present (${calculateDuration("2023-05-08")})`,
-    description:
-      "Developed and maintained various client projects, focusing on responsive design and performance optimization.",
+    duration: "duration1",
+    description: "descJob1",
     link: "https://websolutions.com",
   },
   {
-    role: "Back-End Developer (Internship)",
+    role: "role2",
     company: "AI Technovation CO.,LTD.",
     logo: "/company/AITechnovation.png",
-    duration: "2022 - 2023 (6 months)",
-    description:
-      "Receive requirements from customers, design and develop back-end systems using Golang language and PostgreSQL database. Sometimes I will help develop front-end systems using NuxtJS as a framework. The project received is related to the development of a healthcard system.",
+    duration: "duration2",
+    description: "descJob2",
     link: "http://www.aitechnovation.com/",
     images: [],
   },

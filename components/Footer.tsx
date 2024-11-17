@@ -1,13 +1,15 @@
 import { mainWebsite } from "@/constants";
 import Link from "next/link";
 import React from "react";
+import { useTranslation } from "react-i18next";
 
 const Footer = () => {
+  const { t } = useTranslation();
   return (
     <footer className="h-14 bg-muted border-t">
       <div className="container h-full mx-auto flex items-center justify-center">
         <h2 className="text-center text-normal text-muted-foreground">
-          Copyright © {new Date().getFullYear()}{" "}
+          {t("copyright")} © {new Date().getFullYear()}{" "}
           <Link
             href={mainWebsite}
             target="_blank"
@@ -15,7 +17,7 @@ const Footer = () => {
           >
             IzePhanthakarn
           </Link>{" "}
-          | All Right Reserved.
+          | {t("allRightsReserved")}
         </h2>
       </div>
     </footer>

@@ -7,8 +7,10 @@ import { useState } from "react";
 import { Card, CardContent } from "../../components/ui/card";
 import { LineMdExternalLink } from "../../components/icon/LineMdExternalLink";
 import { projects, techColors } from "@/constants";
+import { useTranslation } from "react-i18next";
 
 export const FeaturedProjects = ({ className }: { className?: string }) => {
+  const { t } = useTranslation();
   const [hoveredIndex, setHoveredIndex] = useState<number | null>(null);
 
   return (
@@ -51,7 +53,7 @@ export const FeaturedProjects = ({ className }: { className?: string }) => {
                   {project.title}
                 </Link>
                 <p className="text-sm text-muted-foreground mt-1 mb-4">
-                  {project.description}
+                  {t(`featuredProjects.${project.description}`)}
                 </p>
                 <div className="mt-auto flex items-center justify-between">
                   <div className="flex items-center space-x-2">
@@ -71,7 +73,7 @@ export const FeaturedProjects = ({ className }: { className?: string }) => {
                     target="_blank"
                     className="flex items-center gap-2 text-sm text-primary hover:underline"
                   >
-                    View Project
+                    {t("featuredProjects.viewProject")}
                     <LineMdExternalLink className="inline-block size-4" />
                   </Link>
                 </div>

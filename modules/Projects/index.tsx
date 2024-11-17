@@ -1,10 +1,12 @@
 import React from "react";
 import { FeaturedProjects } from "./FeaturedProjects";
+import { useTranslation } from "react-i18next";
 
 const Projects = () => {
+  const { t } = useTranslation();
   return (
     <div>
-      <h2 className="text-xl font-bold mb-4">Featured Projects</h2>
+      <h2 className="text-xl font-bold mb-4">{t("featuredProjects.title")}</h2>
       <FeaturedProjects />
     </div>
   );

@@ -5,6 +5,7 @@ import { socials } from "@/constants";
 import Image from "next/image";
 import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
+import { useTranslation } from "react-i18next";
 
 const getUsername = (name: string, link: string): string => {
   const isSpecialCase = ["Email", "Phone"].includes(name);
@@ -13,6 +14,7 @@ const getUsername = (name: string, link: string): string => {
 };
 
 const Profile = () => {
+  const { t } = useTranslation();
   return (
     <Card>
       <CardContent className="pt-6">
@@ -31,12 +33,12 @@ const Profile = () => {
                 Phanthakarn Khumphai
               </h1>
               <p className="text-sm md:text-base text-muted-foreground">
-                Fullstack Developer
+                Full Stack Developer
               </p>
             </div>
           </div>
           <p className="mt-2 text-start text-sm text-muted-foreground">
-            I am a full-stack developer who enjoys creating products that solve real-world problems.
+            {t("profile.description")}
           </p>
           <Button className="mt-4 w-full" asChild>
             <Link
@@ -44,7 +46,7 @@ const Profile = () => {
               target="_blank"
               className="font-semibold"
             >
-              Full website
+              {t("profile.fullWebsite")}
             </Link>
           </Button>
           <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">

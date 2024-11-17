@@ -2,6 +2,7 @@ import React from "react";
 import { Badge } from "@/components/ui/badge";
 import { Card, CardContent } from "@/components/ui/card";
 import { skills } from "@/constants";
+import { useTranslation } from "react-i18next";
 
 const SkillSection = ({
   title,
@@ -23,13 +24,14 @@ const SkillSection = ({
 );
 
 const Skills = () => {
+  const { t } = useTranslation();
   return (
     <>
-      <h2 className="text-xl font-bold mb-4 ml-2">Skills</h2>
+      <h2 className="text-xl font-bold mb-4 ml-2">{t("skills")}</h2>
       <Card>
         <CardContent>
-          <SkillSection title="Frontend" skills={skills.frontend} />
-          <SkillSection title="Backend" skills={skills.backend} />
+          <SkillSection title="Front-end" skills={skills.frontend} />
+          <SkillSection title="Back-end" skills={skills.backend} />
           <SkillSection title="Tools" skills={skills.tools} />
         </CardContent>
       </Card>
