@@ -1,8 +1,8 @@
 import { LineMdCalendar } from "@/components/icon/LineMdCalendar";
 import { Card, CardContent } from "@/components/ui/card";
+import { LinkPreview } from "@/components/ui/link-preview";
 import { jobs } from "@/constants";
 import Image from "next/image";
-import Link from "next/link";
 import React from "react";
 import { useTranslation } from "react-i18next";
 import { v4 as uuidv4 } from "uuid";
@@ -27,7 +27,7 @@ const Experience = () => {
                   />
                   <div>
                     <h3 className="font-semibold">{t(`workExperience.${job.role}`)}</h3>
-                    <Link href={job.link} className="text-sm text-muted-foreground hover:underline">{job.company}</Link>
+                    <LinkPreview url={job.link} className="text-sm text-muted-foreground hover:underline" width={150} height={100}>{job.company}</LinkPreview>
                   </div>
                 </div>
                 <p className="text-xs text-muted-foreground mt-2 flex items-center">

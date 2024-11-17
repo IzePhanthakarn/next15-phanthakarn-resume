@@ -99,7 +99,7 @@ export const jobs = [
     logo: "/company/Soilfish.png",
     duration: "duration1",
     description: "descJob1",
-    link: "https://websolutions.com",
+    link: "https://soilfish.co/",
   },
   {
     role: "role2",

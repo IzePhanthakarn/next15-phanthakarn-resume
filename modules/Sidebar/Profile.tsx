@@ -7,6 +7,7 @@ import Link from "next/link";
 import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from "react-i18next";
 import { LineMdExternalLink } from "@/components/icon/LineMdExternalLink";
+import { LinkPreview } from "@/components/ui/link-preview";
 
 const getUsername = (name: string, link: string): string => {
   const isSpecialCase = ["Email", "Phone"].includes(name);
@@ -42,14 +43,15 @@ const Profile = () => {
             {t("profile.description")}
           </p>
           <Button className="mt-4 w-full" asChild>
-            <Link
-              href="https://izephanthakarn.netlify.app/"
-              target="_blank"
+            <LinkPreview
+              url="https://izephanthakarn.netlify.app/"
+              imageSrc="/izephanthakarn-web.png"
+              isStatic
               className="font-semibold"
             >
               {t("profile.fullWebsite")}
               <LineMdExternalLink className="inline-block size-4" />
-            </Link>
+            </LinkPreview>
           </Button>
           <div className="mt-4 flex flex-col space-y-2 border-t border-border pt-4 w-full">
             {socials.map((social: Social) => {
