@@ -89,7 +89,6 @@ const resources = {
   },
 };
 
-// อ่านค่าภาษาเริ่มต้นจาก localStorage
 const savedLang =
   typeof window !== "undefined" ? localStorage.getItem("i18nextLng") : "en-US";
 

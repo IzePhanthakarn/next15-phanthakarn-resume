@@ -45,8 +45,20 @@ export const skills = {
     "NuxtJS",
     "Shadcn",
     "TailwindCSS",
+    "JavaScript",
+    "TypeScript",
   ],
-  backend: ["ExpressJS", "SQL", "Golang", "PostgreSQL", "MySQL"],
+  backend: [
+    "ExpressJS",
+    "SQL",
+    "Golang",
+    "NextJS",
+    "PostgreSQL",
+    "MySQL",
+    "ElysiaJS",
+    "Supabase",
+    "Sentry",
+  ],
   tools: [
     "VSCode",
     "Docker",
@@ -56,6 +68,11 @@ export const skills = {
     "DBeaver",
     "Git",
     "Figma",
+    "Lens",
+    "Notion",
+    "Window",
+    "MacOS",
+    "Jenkins",
   ],
 };
 
@@ -103,7 +120,7 @@ export const jobs = [
   },
   {
     role: "role2",
-    company: "AI Technovation CO.,LTD.",
+    company: "AI Technovation Co.,Ltd.",
     logo: "/company/AITechnovation.png",
     duration: "duration2",
     description: "descJob2",
