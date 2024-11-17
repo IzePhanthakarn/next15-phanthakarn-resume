@@ -8,7 +8,7 @@ const Footer = () => {
   return (
     <footer className="h-14 bg-muted border-t">
       <div className="container h-full mx-auto flex items-center justify-center">
-        <h2 className="text-center text-normal text-muted-foreground">
+        <h2 className="text-center text-sm sm:text-normal text-muted-foreground">
           {t("copyright")} © {new Date().getFullYear()}{" "}
           <Link
             href={mainWebsite}

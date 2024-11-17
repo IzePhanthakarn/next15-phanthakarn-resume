@@ -26,7 +26,7 @@ const Profile = () => {
               quality={100}
               src="/avatar.jpg"
               alt="avatar"
-              className="rounded-full size-12 md:w-full h-auto max-h-80 max-w-80 mx-auto object-cover border-2 shadow-lg"
+              className="rounded-full size-20 md:w-full h-auto max-h-80 max-w-80 mx-auto object-cover border-2 shadow-lg"
             />
             <div className="flex flex-col items-start justify-center">
               <h1 className="font-bold md:mt-4 text-lg md:text-xl">
