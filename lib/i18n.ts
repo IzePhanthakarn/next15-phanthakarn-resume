@@ -51,7 +51,7 @@ const resources = {
         title: "เกี่ยวกับผม",
         description1: `ผมเริ่มเรียนรู้การพัฒนาเว็บในปี 2022 โดยเริ่มจากการทำโปรเจกต์ด้วย HTML/CSS จากการดูคลิปสอนบน YouTube ต่อมาได้เริ่มศึกษา Framework ต่างๆ เพื่อพัฒนาทั้งด้าน Front-end และ Back-end รวมถึงการสร้าง API ด้วย Golang ตอนนี้ผมมีประสบการณ์มา ${calculateDuration(
           "2022-01-01",
-          "th"
+          "th-TH"
         )}แล้ว และสามารถสร้างเว็บไซต์ตั้งแต่การวางโครงร่างไปจนถึงการ Deployment ให้ใช้งานได้จริง`,
       },
       profile: {
@@ -77,7 +77,7 @@ const resources = {
         descJob1:
           "หลังจากเรียนจบ ที่นี่คือบริษัทแรกที่ผมเข้าทำงาน ผมได้เรียนรู้ Framework ใหม่ๆ ผมได้พัฒนา ทักษะ ความรู้เรื่อง และเครื่องมือในการพัฒนาเว็บไซต์ต่างๆ ทักษะผมก้าวกระโดดมากๆเนื่องจากมีทีมที่ดี ค่อยให้คำปรึกษากัน ปัจจุบันผ่านมาแล้ว 2 โปรเจกต์ และ maintainance อีก 4 โปรเจกต์ ส่วนใหญ่ผมจะพัฒนาในส่วนของระบบหน้าบ้าน",
         role1: "Full Stack Developer",
-        duration1: `2023 - ปัจจุบัน (${calculateDuration("2023-05-08", "th")})`,
+        duration1: `2023 - ปัจจุบัน (${calculateDuration("2023-05-08", "th-TH")})`,
         descJob2:
           "ผมต้องรับข้อกำหนดจากลูกค้า ออกแบบและพัฒนาระบบ Back-end โดยใช้ภาษา Golang และฐานข้อมูล PostgreSQL บางครั้งฉันจะช่วยพัฒนา Front-end โดยใช้ NuxtJS เป็นเฟรมเวิร์ก โปรเจกต์ที่ผมมีส่วนร่วมในการพัฒนาคือระบบดูแลสุขภาพ",
         role2: "Back-End Developer (ฝึกงาน)",
@@ -91,14 +91,14 @@ const resources = {
 
 // อ่านค่าภาษาเริ่มต้นจาก localStorage
 const savedLang =
-  typeof window !== "undefined" ? localStorage.getItem("i18nextLng") : "en";
+  typeof window !== "undefined" ? localStorage.getItem("i18nextLng") : "en-US";
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     resources,
-    fallbackLng: savedLang ?? "en",
+    fallbackLng: savedLang ?? "en-US",
     detection: {
       order: ["localStorage", "navigator"],
       caches: ["localStorage"],
