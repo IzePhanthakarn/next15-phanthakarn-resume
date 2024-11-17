@@ -24,7 +24,7 @@ const notoSansThai = localFont({
       style: "normal",
     },
     {
-      path: "./fonts/NotoSansThai-Semibold.ttf",
+      path: "./fonts/NotoSansThai-SemiBold.ttf",
       weight: "600",
       style: "normal",
     },
