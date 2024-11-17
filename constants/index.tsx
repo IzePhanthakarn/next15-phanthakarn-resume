@@ -2,6 +2,7 @@ import { LineMdEmail } from "@/components/icon/LineMdEmail";
 import { LineMdFacebook } from "@/components/icon/LineMdFacebook";
 import { LineMdGithubLoop } from "@/components/icon/LineMdGithubLoop";
 import { LineMdInstagram } from "@/components/icon/LineMdInstagram";
+import { LineMdMapMarkerLoop } from "@/components/icon/LineMdMapMarkerLoop";
 import { LineMdPhoneCallLoop } from "@/components/icon/LineMdPhoneCallLoop";
 
 export const mainWebsite = "https://izephanthakarn.netlify.app/";
@@ -32,6 +33,11 @@ export const socials: Social[] = [
     name: "Phone",
     link: "tel:0983405579",
     icon: <LineMdPhoneCallLoop className="size-4" />,
+  },
+  {
+    name: "Address",
+    link: "Suphanburi, Thailand",
+    icon: <LineMdMapMarkerLoop className="size-4" />,
   },
 ];
 
@@ -80,7 +86,7 @@ export const projects: Project[] = [
   {
     title: "Phanthakarn Resume",
     description: "descProject1",
-    tech: "TypeScript",
+    tech: "NextJS",
     link: "https://github.com/IzePhanthakarn/next15-phanthakarn-resume",
   },
   {
@@ -104,6 +110,7 @@ export const projects: Project[] = [
 ];
 
 export const techColors = {
+  NextJS: "#3178C6",
   TypeScript: "#3178C6",
   NuxtJS: "#41b883",
   JavaScript: "#F1E05A",

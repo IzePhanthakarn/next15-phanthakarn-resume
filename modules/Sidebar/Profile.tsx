@@ -8,6 +8,11 @@ import { v4 as uuidv4 } from "uuid";
 import { useTranslation } from "react-i18next";
 import { LineMdExternalLink } from "@/components/icon/LineMdExternalLink";
 import { LinkPreview } from "@/components/ui/link-preview";
+import { HugeiconsGameController03 } from "@/components/icon/HugeiconsGameController03";
+import { PepiconsPopMusicNoteSingleCircle } from "@/components/icon/PepiconsPopMusicNoteSingleCircle";
+import { MdiMovieOpenPlayOutline } from "@/components/icon/MdiMovieOpenPlayOutline";
+import { UilBookOpen } from "@/components/icon/UilBookOpen";
+import { IcRoundSkateboarding } from "@/components/icon/IcRoundSkateboarding";
 
 const getUsername = (name: string, link: string): string => {
   const isSpecialCase = ["Email", "Phone"].includes(name);
@@ -57,12 +62,18 @@ const Profile = () => {
             {socials.map((social: Social) => {
               const username = getUsername(social.name, social.link);
 
+              const handleAddressClick = (event: React.MouseEvent<HTMLAnchorElement>) => {
+                if (social.name === "Address") {
+                  event.preventDefault();
+                }
+              };
               return (
                 <Link
                   key={uuidv4()}
-                  href={social.link}
-                  target="_blank"
+                  href={social.name === "Address" ? "#" : social.link}
+                  target={social.name === "Address" ? undefined : "_blank"}
                   aria-label={`${social.name} Logo`}
+                  onClick={handleAddressClick}
                   className="cursor-pointer flex items-center gap-2 group"
                 >
                   {social.icon}
@@ -72,6 +83,13 @@ const Profile = () => {
                 </Link>
               );
             })}
+          </div>
+          <div className="flex mt-2 gap-3 items-center">
+            <HugeiconsGameController03 className="size-10" />
+            <PepiconsPopMusicNoteSingleCircle className="size-8" />
+            <MdiMovieOpenPlayOutline className="size-9" />
+            <IcRoundSkateboarding className="size-9" />
+            <UilBookOpen className="size-9" />
           </div>
         </div>
       </CardContent>
