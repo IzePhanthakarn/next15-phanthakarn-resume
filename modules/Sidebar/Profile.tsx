@@ -13,9 +13,10 @@ import { PepiconsPopMusicNoteSingleCircle } from "@/components/icon/PepiconsPopM
 import { MdiMovieOpenPlayOutline } from "@/components/icon/MdiMovieOpenPlayOutline";
 import { UilBookOpen } from "@/components/icon/UilBookOpen";
 import { IcRoundSkateboarding } from "@/components/icon/IcRoundSkateboarding";
+import { MaterialSymbolsCode } from "@/components/icon/MaterialSymbolsCode";
 
 const getUsername = (name: string, link: string): string => {
-  const isSpecialCase = ["Email", "Phone"].includes(name);
+  const isSpecialCase = ["Email", "Phone","Address"].includes(name);
   const parts = isSpecialCase ? link.split(":") : link.split("/");
   return isSpecialCase ? parts[1] : `/${parts[parts.length - 1]}`;
 };
@@ -89,6 +90,7 @@ const Profile = () => {
             <PepiconsPopMusicNoteSingleCircle className="size-8" />
             <MdiMovieOpenPlayOutline className="size-9" />
             <IcRoundSkateboarding className="size-9" />
+            <MaterialSymbolsCode className="size-9" />
             <UilBookOpen className="size-9" />
           </div>
         </div>

@@ -6,7 +6,7 @@ import { LineMdDownloadingLoop } from "../icon/LineMdDownloadingLoop";
 
 const DownloadResume = () => {
   return (
-    <Button variant="outline" size="icon" onClick={() => window.open("/Phanthakarn's-Resume.pdf", "_blank")}>
+    <Button variant="outline" size="icon" onClick={() => window.open("/Phanthakarn-Resume-22112024.pdf", "_blank")}>
       <LineMdDownloadingLoop className="scale-125" />
     </Button>
   );

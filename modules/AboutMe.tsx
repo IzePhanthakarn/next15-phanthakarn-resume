@@ -9,9 +9,12 @@ const AboutMe = () => {
       <CardHeader>
         <CardTitle>{t("aboutMe.title")}</CardTitle>
       </CardHeader>
-      <CardContent>
+      <CardContent className="space-y-6">
         <p className="text-muted-foreground text">
           {t("aboutMe.description1")}
+        </p>
+        <p className="text-muted-foreground text">
+          {t("aboutMe.description2")}
         </p>
       </CardContent>
     </Card>

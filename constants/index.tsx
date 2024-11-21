@@ -31,12 +31,12 @@ export const socials: Social[] = [
   },
   {
     name: "Phone",
-    link: "tel:0983405579",
+    link: "tel:+66 98 340 5579",
     icon: <LineMdPhoneCallLoop className="size-4" />,
   },
   {
     name: "Address",
-    link: "Suphanburi, Thailand",
+    link: ":Suphanburi, Thailand",
     icon: <LineMdMapMarkerLoop className="size-4" />,
   },
 ];
@@ -46,22 +46,22 @@ export const skills = {
   frontend: [
     "ReactJS",
     "NextJS",
-    "MUI",
     "VueJS",
     "NuxtJS",
     "Shadcn",
     "TailwindCSS",
     "JavaScript",
     "TypeScript",
+    "MUI",
   ],
   backend: [
     "ExpressJS",
+    "NextJS",
+    "ElysiaJS",
     "SQL",
     "Golang",
-    "NextJS",
     "PostgreSQL",
     "MySQL",
-    "ElysiaJS",
     "Supabase",
     "Sentry",
   ],
@@ -74,20 +74,36 @@ export const skills = {
     "DBeaver",
     "Git",
     "Figma",
-    "Lens",
     "Notion",
     "Window",
     "MacOS",
     "Jenkins",
   ],
+  softSkill: [
+    "Communication",
+    "Decision Making",
+    "Creativity",
+    "Time Management",
+    "Problem Solving",
+    "Teamwork",
+  ],
+  interestedIn: [
+    "Cryptocurrency",
+    "New Innovation",
+    "FPS Shooting Game",
+    "Manga",
+    "Novel",
+    "Anime",
+    "Animals"
+  ]
 };
 
 export const projects: Project[] = [
   {
-    title: "Phanthakarn Resume",
+    title: "Portfilio Website",
     description: "descProject1",
-    tech: "NextJS",
-    link: "https://github.com/IzePhanthakarn/next15-phanthakarn-resume",
+    tech: "NuxtJS",
+    link: "https://github.com/IzePhanthakarn/next15-innovate-space",
   },
   {
     title: "Elysia API for Portfolio",
@@ -96,14 +112,26 @@ export const projects: Project[] = [
     link: "https://github.com/IzePhanthakarn/elysia-portfolio",
   },
   {
-    title: "Portfilio Website",
+    title: "Phanthakarn Resume",
     description: "descProject3",
-    tech: "NuxtJS",
+    tech: "NextJS",
+    link: "https://github.com/IzePhanthakarn/next15-phanthakarn-resume",
+  },
+  {
+    title: "Blog Website",
+    description: "descProject4",
+    tech: "NextJS",
     link: "https://github.com/IzePhanthakarn/nuxt3-portfolio",
   },
   {
+    title: "Discord Crtypto Notification",
+    description: "descProject5",
+    tech: "JavaScript",
+    link: "https://github.com/IzePhanthakarn/discord-crypto-noti",
+  },
+  {
     title: "Discord ChatGPT Bot",
-    description: "descProject4",
+    description: "descProject6",
     tech: "JavaScript",
     link: "https://github.com/IzePhanthakarn/discord-chatgpt-bot",
   },

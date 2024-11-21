@@ -10,6 +10,7 @@ import FloatingMenu from "@/components/FloatingMenu";
 import { useTranslation } from "react-i18next";
 import { useEffect, useState } from "react";
 import Loading from "@/components/Loading";
+import PersonalInfo from "@/modules/PersonalInfo";
 const Home = () => {
   const { i18n } = useTranslation();
   const [isI18nReady, setIsI18nReady] = useState(false);
@@ -34,6 +35,7 @@ const Home = () => {
           <Sidebar />
           <main className="lg:col-span-2">
             <AboutMe />
+            <PersonalInfo />
             <Projects />
             <Experience />
           </main>

@@ -26,16 +26,18 @@ const SkillSection = ({
 const Skills = () => {
   const { t } = useTranslation();
   return (
-    <>
-      <h2 className="text-xl font-bold mb-4 ml-2">{t("skills")}</h2>
+    <div>
+      <h2 className="text-xl font-bold mb-4">{t("skills")}</h2>
       <Card>
         <CardContent>
           <SkillSection title="Front-end" skills={skills.frontend} />
           <SkillSection title="Back-end" skills={skills.backend} />
           <SkillSection title="Tools" skills={skills.tools} />
+          <SkillSection title="Soft Skill" skills={skills.softSkill} />
+          <SkillSection title="Interested In" skills={skills.interestedIn} />
         </CardContent>
       </Card>
-    </>
+    </div>
   );
 };
 
