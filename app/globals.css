@@ -69,4 +69,32 @@ body {
   body {
     @apply bg-background text-foreground;
   }
+
+  .personalinfo_column1-title {
+    @apply w-full sm:w-16 md:w-24 lg:w-16 xl:w-28 text-base sm:text-xs xl:text-sm 2xl:text-base font-semibold
+  }
+
+  .personalinfo_column1-value {
+    @apply ml-2 w-full sm:w-fit text-end sm:text-start text-base sm:text-xs xl:text-sm 2xl:text-base text-muted-foreground
+  }
+
+  .personalinfo_column2-title {
+    @apply w-full sm:w-20 md:w-28 lg:w-20 xl:w-36 text-base sm:text-xs xl:text-sm 2xl:text-base font-semibold
+  }
+
+  .personalinfo_column2-value {
+    @apply ml-2 w-full sm:w-fit text-end sm:text-start text-base sm:text-xs xl:text-sm 2xl:text-base text-muted-foreground
+  }
+
+  .personalinfo_column3-title {
+    @apply w-full sm:w-12 md:w-16 lg:w-12 xl:w-20 text-base sm:text-xs xl:text-sm 2xl:text-base font-semibold
+  }
+
+  .personalinfo_column3-value {
+    @apply ml-2 w-full sm:w-fit text-end sm:text-start text-base sm:text-xs xl:text-sm 2xl:text-base text-muted-foreground
+  }
+
+  .personalinfo_language-value {
+    @apply text-base sm:text-xs xl:text-sm 2xl:text-base text-muted-foreground
+  }
 }
