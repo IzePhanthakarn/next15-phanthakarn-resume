@@ -103,7 +103,7 @@ export const projects: Project[] = [
     title: "Portfilio Website",
     description: "descProject1",
     tech: "NuxtJS",
-    link: "https://github.com/IzePhanthakarn/next15-innovate-space",
+    link: "https://github.com/IzePhanthakarn/nuxt3-portfolio",
   },
   {
     title: "Elysia API for Portfolio",
@@ -121,7 +121,7 @@ export const projects: Project[] = [
     title: "Blog Website",
     description: "descProject4",
     tech: "NextJS",
-    link: "https://github.com/IzePhanthakarn/nuxt3-portfolio",
+    link: "https://github.com/IzePhanthakarn/next15-innovate-space",
   },
   {
     title: "Discord Crtypto Notification",
