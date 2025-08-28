@@ -21,7 +21,7 @@ const resources = {
       personalInfo: {
         title: "Personal Information",
         age: "Age",
-        ageValue: "23 Years",
+        ageValue: "24 Years",
         dateOfBirth: "Date of Birth",
         dateOfBirthValue: "17 June 2001",
         nationality: "Nationality",
