@@ -63,7 +63,7 @@ export const skills = {
     "PostgreSQL",
     "MySQL",
     "Supabase",
-    "Sentry",
+    "Rust",
   ],
   tools: [
     "VSCode",
